@@ -1,6 +1,7 @@
 class fetchData extends Thread {
     public void run() {
         try {
+            System.out.println("fetchData started.");
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             System.out.println(e);
@@ -16,6 +17,7 @@ class fetchData extends Thread {
 class processData implements Runnable {
     public void run() {
         try {
+            System.out.println("processData started.");
             Thread.sleep(10000);
         } catch (InterruptedException e) {
             System.out.println(e);
